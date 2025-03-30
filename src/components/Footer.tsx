@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <h2 className="text-2xl font-bold">Finlay Fray</h2>
             <p className="text-gray-400 mt-2">
-              IT Professional - System Administration
+              IT Professional
             </p>
           </div>
           
@@ -40,11 +40,19 @@ const Footer = () => {
         <hr className="border-gray-800 my-8" />
         
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {currentYear} Finlay Fray. All rights reserved.
-          </p>
+          <div className="text-gray-400 text-sm mb-4 md:mb-0 flex flex-col md:flex-row gap-2 md:gap-6">
+            <a href="tel:07704413988" className="hover:text-blue-400 transition-colors flex items-center">
+              07704413988
+            </a>
+            <a href="mailto:finlayfray70@gmail.com" className="hover:text-blue-400 transition-colors flex items-center">
+              finlayfray70@gmail.com
+            </a>
+            <span className="flex items-center">
+              Bath and North East
+            </span>
+          </div>
           <p className="text-gray-400 text-sm flex items-center">
-            Designed & Built with <Heart className="h-4 w-4 text-red-500 mx-1" /> by Finlay Fray
+            © {currentYear} Finlay Fray. All rights reserved.
           </p>
         </div>
       </div>

@@ -13,45 +13,46 @@ type Experience = {
 const WorkExperience = () => {
   const experiences: Experience[] = [
     {
+      title: "Bar Staff",
+      company: "Labyrinth Bar & Nightclub",
+      location: "Bath",
+      period: "2024 - 2024",
+      description: [
+        "Maintained POS systems and troubleshooting minor IT issues on-site",
+        "Built strong relationships with customers",
+        "Developed communication skills, handling objections and providing tailored service to diverse clients",
+        "Thrived in a fast-paced, high-pressure environment, balancing multiple priorities and maintaining exceptional service",
+        "Ensured compliance with security protocols, safeguarding customer data and handling sensitive transactions"
+      ],
+      technologies: ["POS Systems", "Customer Service", "Problem Solving", "Security Protocols"],
+    },
+    {
+      title: "IT service desk analyst",
+      company: "University of Bath",
+      location: "Bath",
+      period: "2023 - 2023",
+      description: [
+        "Worked as a team of 7 on the helpdesk supporting approximately 8,000 staff members and 20,000 students and visitors",
+        "Supported 300 University-owned computers on Windows, along with countless personal devices",
+        "Handled support requests within defined service level agreements",
+        "Worked closely with both 2nd line, 3rd line and the cyber team to escalate problems and identify solutions",
+        "Supported ticket-based helpdesk queries and problems including troubleshooting connections, system access, and general technical tasks"
+      ],
+      technologies: ["Windows", "Help Desk Systems", "Technical Troubleshooting", "IT Support"],
+    },
+    {
       title: "IT Technician",
       company: "Studio Mix LTD",
       location: "Somerset",
       period: "2022 - 2023",
       description: [
         "Worked solo to install, deploy and troubleshoot technology",
-        "Supported 1 project of installing technology such as a rear facing camera, raspberry pi and car play in a vehicle",
+        "Supported projects for installing technology such as rear facing cameras, Raspberry Pi and Car Play in vehicles",
         "Resolved issues timely within defined service level agreements",
-        "Worked with a range of external stakeholders and clients, such as the director",
-        "Supported help desk review long queries and problems such as internet/video connectivity issues to unblock critical services"
+        "Worked with external stakeholders and clients including directors",
+        "Supported help desk review of queries and problems including internet/video connectivity issues"
       ],
       technologies: ["Raspberry Pi", "Vehicle Technology", "Troubleshooting", "Service Level Agreements"],
-    },
-    {
-      title: "IT service advisor",
-      company: "University of Bath",
-      location: "Bath",
-      period: "2023 - 2023",
-      description: [
-        "Worked as a team of 7 on the helpdesk supporting approximately 24,000 staff and 20,000 students and visitors",
-        "Supported 300 University owned computers on Windows 10 along with countless personal devices such as computers, printers, TVs, and mobile phones via Microsoft Teams, tickets, in-person, and via phone",
-        "Handled 20-30 support requests within defined service level agreements",
-        "Worked closely with both 2nd line, 3rd line and the cyber team to escalate problems and to identify solutions",
-        "Supported ticket-based helpdesk queries and problems such as troubleshooting connections, finding deleted emails, lockouts, system access, and general technical tasks"
-      ],
-      technologies: ["Windows 10", "Microsoft Teams", "Help Desk Systems", "Technical Troubleshooting"],
-    },
-    {
-      title: "Labourer/Bar",
-      company: "Nightclub",
-      location: "Somerset",
-      period: "2004 - 2014",
-      description: [
-        "Maintained POS systems and troubleshooting issues",
-        "Built strong relationships with customers",
-        "Developed communication skills, handling objections and providing tailored service to diverse clients",
-        "Thrived in fast-paced, high-pressure environment, balancing multiple tasks simultaneously",
-        "Ensured compliance with security protocols, safeguarding customer data and handling sensitive transactions"
-      ],
     }
   ];
 

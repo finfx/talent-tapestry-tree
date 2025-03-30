@@ -17,9 +17,9 @@ const Skills = () => {
     },
     {
       title: "System Administration",
-      description: "Managing and maintaining IT systems and infrastructure",
+      description: "Managing and maintaining IT systems across multiple platforms",
       icon: <Server className="w-8 h-8 text-blue-600" />,
-      skills: ["Windows 10", "Server Management", "Active Directory", "User Management", "System Optimization"]
+      skills: ["Windows", "Linux", "MacOS", "Active Directory", "User Management"]
     },
     {
       title: "Network Troubleshooting",
@@ -34,10 +34,10 @@ const Skills = () => {
       skills: ["Security Protocols", "Data Protection", "Compliance", "Threat Detection", "Risk Assessment"]
     },
     {
-      title: "Hardware & Software Management",
-      description: "Installation, configuration and maintenance of IT equipment",
+      title: "Cloud Technologies",
+      description: "Experience with cloud platforms and services",
       icon: <HardDrive className="w-8 h-8 text-blue-600" />,
-      skills: ["PC Building", "Hardware Repair", "Software Installation", "System Updates", "Peripherals Setup"]
+      skills: ["AWS", "Azure", "Office 365", "Cloud Migration", "SaaS Solutions"]
     },
   ];
 
