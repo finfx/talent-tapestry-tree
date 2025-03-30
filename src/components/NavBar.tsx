@@ -36,7 +36,7 @@ const NavBar = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#home" className="text-xl font-bold text-gray-800">
-          Portfolio
+          Finlay Fray
         </a>
 
         {/* Desktop Menu */}
@@ -50,7 +50,9 @@ const NavBar = () => {
               {item.label}
             </a>
           ))}
-          <Button size="sm">Resume</Button>
+          <Button size="sm" asChild>
+            <a href="#contact">Contact Me</a>
+          </Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -76,8 +78,8 @@ const NavBar = () => {
                 {item.label}
               </a>
             ))}
-            <Button size="sm" className="w-full">
-              Resume
+            <Button size="sm" className="w-full" asChild>
+              <a href="#contact">Contact Me</a>
             </Button>
           </div>
         </div>

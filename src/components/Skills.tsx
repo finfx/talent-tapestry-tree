@@ -1,43 +1,43 @@
 
-import { Award, Code, Database, Globe, Server, Users } from "lucide-react";
+import { Award, Code, Database, Globe, Server, Shield, Wrench, HardDrive, Network, Users } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
-      description: "Creating responsive and interactive user interfaces",
-      icon: <Globe className="w-8 h-8 text-blue-600" />,
-      skills: ["HTML/CSS", "JavaScript", "React", "TypeScript", "Tailwind CSS"]
+      title: "Problem-Solving & Resilience",
+      description: "Methodical approach to IT problem diagnosis and resolution",
+      icon: <Wrench className="w-8 h-8 text-blue-600" />,
+      skills: ["Diagnostic Troubleshooting", "System Recovery", "Critical Thinking", "Root Cause Analysis", "Incident Response"]
     },
     {
-      title: "Backend Development",
-      description: "Building robust server-side applications",
-      icon: <Server className="w-8 h-8 text-blue-600" />,
-      skills: ["Node.js", "Express", "Python", "Java", "RESTful APIs"]
-    },
-    {
-      title: "Database Management",
-      description: "Designing and optimizing database systems",
-      icon: <Database className="w-8 h-8 text-blue-600" />,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis"]
-    },
-    {
-      title: "UI/UX Design",
-      description: "Creating beautiful and intuitive user experiences",
-      icon: <Code className="w-8 h-8 text-blue-600" />,
-      skills: ["Figma", "Adobe XD", "Sketch", "Wireframing", "Prototyping"]
-    },
-    {
-      title: "Project Management",
-      description: "Leading projects from concept to completion",
+      title: "Relationship Building & Client Management",
+      description: "Developing strong client relationships and providing tailored IT support",
       icon: <Users className="w-8 h-8 text-blue-600" />,
-      skills: ["Agile", "Scrum", "Jira", "Trello", "Git/GitHub"]
+      skills: ["Customer Support", "Client Communication", "Service Management", "Relationship Building", "Conflict Resolution"]
     },
     {
-      title: "Other Skills",
-      description: "Additional technical competencies",
-      icon: <Award className="w-8 h-8 text-blue-600" />,
-      skills: ["DevOps", "AWS", "Docker", "Testing", "CI/CD"]
+      title: "System Administration",
+      description: "Managing and maintaining IT systems and infrastructure",
+      icon: <Server className="w-8 h-8 text-blue-600" />,
+      skills: ["Windows 10", "Server Management", "Active Directory", "User Management", "System Optimization"]
+    },
+    {
+      title: "Network Troubleshooting",
+      description: "Diagnosing and resolving network-related issues",
+      icon: <Network className="w-8 h-8 text-blue-600" />,
+      skills: ["TCP/IP", "Firewalls", "Network Diagnostics", "Connectivity Issues", "Router Configuration"]
+    },
+    {
+      title: "Cybersecurity & Endpoint Protection",
+      description: "Ensuring system security and data protection",
+      icon: <Shield className="w-8 h-8 text-blue-600" />,
+      skills: ["Security Protocols", "Data Protection", "Compliance", "Threat Detection", "Risk Assessment"]
+    },
+    {
+      title: "Hardware & Software Management",
+      description: "Installation, configuration and maintenance of IT equipment",
+      icon: <HardDrive className="w-8 h-8 text-blue-600" />,
+      skills: ["PC Building", "Hardware Repair", "Software Installation", "System Updates", "Peripherals Setup"]
     },
   ];
 
@@ -48,7 +48,7 @@ const Skills = () => {
           <h2 className="text-3xl font-bold text-gray-900">My Skills</h2>
           <div className="mt-2 h-1 w-20 bg-blue-600 mx-auto"></div>
           <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-            Here are some of the technologies and skills I've worked with
+            Here are some of the key skills and expertise I've developed throughout my career
           </p>
         </div>
 

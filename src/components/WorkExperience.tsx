@@ -13,41 +13,32 @@ type Experience = {
 const WorkExperience = () => {
   const experiences: Experience[] = [
     {
-      title: "Senior Frontend Developer",
-      company: "Tech Innovations Inc.",
-      location: "San Francisco, CA",
-      period: "Jan 2021 - Present",
+      title: "Labourer/Bar",
+      company: "Nightclub",
+      location: "Somerset",
+      period: "2004 - 2014",
       description: [
-        "Led development of the company's flagship SaaS product, resulting in a 40% increase in user engagement",
-        "Implemented responsive design principles, improving mobile conversion rates by 25%",
-        "Mentored junior developers and conducted code reviews to ensure high quality standards",
+        "Maintained POS systems and troubleshooting issues",
+        "Built strong relationships with customers",
+        "Developed communication skills, handling objections and providing tailored service to diverse clients",
+        "Thrived in fast-paced, high-pressure environment, balancing multiple tasks simultaneously",
+        "Ensured compliance with security protocols, safeguarding customer data and handling sensitive transactions"
       ],
-      technologies: ["React", "TypeScript", "Redux", "Tailwind CSS"],
     },
     {
-      title: "Web Developer",
-      company: "Digital Solutions LLC",
-      location: "Austin, TX",
-      period: "Mar 2018 - Dec 2020",
+      title: "IT service advisor",
+      company: "University of Bath",
+      location: "Bath",
+      period: "2023 - 2023",
       description: [
-        "Developed and maintained client websites using modern JavaScript frameworks",
-        "Collaborated with design team to implement pixel-perfect UI components",
-        "Optimized application performance, reducing load times by 30%",
+        "Worked as a team of 7 on the helpdesk supporting approximately 24,000 staff and 20,000 students and visitors",
+        "Supported 300 University owned computers on Windows 10 along with countless personal devices such as computers, printers, TVs, and mobile phones via Microsoft Teams, tickets, in-person, and via phone",
+        "Handled 20-30 support requests within defined service level agreements",
+        "Worked closely with both 2nd line, 3rd line and the cyber team to escalate problems and to identify solutions",
+        "Supported ticket-based helpdesk queries and problems such as troubleshooting connections, finding deleted emails, lockouts, system access, and general technical tasks"
       ],
-      technologies: ["JavaScript", "Vue.js", "SCSS", "Node.js"],
-    },
-    {
-      title: "Junior Developer",
-      company: "StartUp Ventures",
-      location: "Seattle, WA",
-      period: "Jun 2016 - Feb 2018",
-      description: [
-        "Built and maintained REST APIs for mobile applications",
-        "Integrated third-party payment systems into e-commerce platforms",
-        "Participated in daily standups and sprint planning meetings",
-      ],
-      technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL"],
-    },
+      technologies: ["Windows 10", "Microsoft Teams", "Help Desk Systems", "Technical Troubleshooting"],
+    }
   ];
 
   return (
@@ -57,7 +48,7 @@ const WorkExperience = () => {
           <h2 className="text-3xl font-bold text-gray-900">Work Experience</h2>
           <div className="mt-2 h-1 w-20 bg-blue-600 mx-auto"></div>
           <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-            My professional journey and the companies I've collaborated with throughout my career.
+            My professional journey and the organizations I've worked with throughout my career.
           </p>
         </div>
 

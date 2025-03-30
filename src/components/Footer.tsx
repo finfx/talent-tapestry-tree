@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h2 className="text-2xl font-bold">Portfolio</h2>
+            <h2 className="text-2xl font-bold">Finlay Fray</h2>
             <p className="text-gray-400 mt-2">
-              Building amazing web experiences
+              IT Professional - System Administration
             </p>
           </div>
           
@@ -38,10 +38,10 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Finlay Fray. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm flex items-center">
-            Designed & Built with <Heart className="h-4 w-4 text-red-500 mx-1" /> by Your Name
+            Designed & Built with <Heart className="h-4 w-4 text-red-500 mx-1" /> by Finlay Fray
           </p>
         </div>
       </div>

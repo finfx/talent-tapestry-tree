@@ -13,27 +13,27 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
-              My Journey
+              My Profile
             </h3>
             <p className="text-gray-600 mb-4">
-              Hello! I'm a passionate developer with a love for creating beautiful, functional websites and applications. My journey in tech began several years ago, and I've been hooked ever since.
+              Detail-orientated IT professional with hands-on experience in PC/network diagnostic system installation and troubleshooting. Experienced in building, maintaining, and repairing servers, PCs, laptops, and workstations, ensuring optimal IT performance and security compliance.
             </p>
             <p className="text-gray-600 mb-6">
-              I specialize in full-stack development, with expertise in modern web technologies. I enjoy solving complex problems and turning ideas into reality through code.
+              Adept at collaborating across teams and providing excellent customer support. Known for a methodical approach to problem solving, strong clear-facing communication, and ability to manage IT related projects efficiently. Passionate about providing high-quality IT solutions and fostering positive relationships.
             </p>
             
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div>
                 <h4 className="font-bold text-gray-800">Name:</h4>
-                <p className="text-gray-600">Your Name</p>
+                <p className="text-gray-600">Finlay Fray</p>
               </div>
               <div>
                 <h4 className="font-bold text-gray-800">Email:</h4>
-                <p className="text-gray-600">your.email@example.com</p>
+                <p className="text-gray-600">FinlayFray70@gmail.com</p>
               </div>
               <div>
                 <h4 className="font-bold text-gray-800">Location:</h4>
-                <p className="text-gray-600">Your City, Country</p>
+                <p className="text-gray-600">Bay road Flat 5, Somerset</p>
               </div>
               <div>
                 <h4 className="font-bold text-gray-800">Availability:</h4>
@@ -54,7 +54,7 @@ const About = () => {
               <div className="relative">
                 <img
                   src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=600"
-                  alt="Working on laptop"
+                  alt="IT Professional working on computer"
                   className="rounded-lg shadow-lg w-full"
                 />
               </div>
