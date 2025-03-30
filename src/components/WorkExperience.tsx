@@ -13,17 +13,18 @@ type Experience = {
 const WorkExperience = () => {
   const experiences: Experience[] = [
     {
-      title: "Labourer/Bar",
-      company: "Nightclub",
+      title: "IT Technician",
+      company: "Studio Mix LTD",
       location: "Somerset",
-      period: "2004 - 2014",
+      period: "2022 - 2023",
       description: [
-        "Maintained POS systems and troubleshooting issues",
-        "Built strong relationships with customers",
-        "Developed communication skills, handling objections and providing tailored service to diverse clients",
-        "Thrived in fast-paced, high-pressure environment, balancing multiple tasks simultaneously",
-        "Ensured compliance with security protocols, safeguarding customer data and handling sensitive transactions"
+        "Worked solo to install, deploy and troubleshoot technology",
+        "Supported 1 project of installing technology such as a rear facing camera, raspberry pi and car play in a vehicle",
+        "Resolved issues timely within defined service level agreements",
+        "Worked with a range of external stakeholders and clients, such as the director",
+        "Supported help desk review long queries and problems such as internet/video connectivity issues to unblock critical services"
       ],
+      technologies: ["Raspberry Pi", "Vehicle Technology", "Troubleshooting", "Service Level Agreements"],
     },
     {
       title: "IT service advisor",
@@ -38,6 +39,19 @@ const WorkExperience = () => {
         "Supported ticket-based helpdesk queries and problems such as troubleshooting connections, finding deleted emails, lockouts, system access, and general technical tasks"
       ],
       technologies: ["Windows 10", "Microsoft Teams", "Help Desk Systems", "Technical Troubleshooting"],
+    },
+    {
+      title: "Labourer/Bar",
+      company: "Nightclub",
+      location: "Somerset",
+      period: "2004 - 2014",
+      description: [
+        "Maintained POS systems and troubleshooting issues",
+        "Built strong relationships with customers",
+        "Developed communication skills, handling objections and providing tailored service to diverse clients",
+        "Thrived in fast-paced, high-pressure environment, balancing multiple tasks simultaneously",
+        "Ensured compliance with security protocols, safeguarding customer data and handling sensitive transactions"
+      ],
     }
   ];
 
