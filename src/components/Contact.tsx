@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -47,19 +46,19 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5 text-blue-600" />,
       title: "Email",
-      details: "your.email@example.com",
-      link: "mailto:your.email@example.com",
+      details: "Finlayfray70@gmail.com",
+      link: "mailto:Finlayfray70@gmail.com",
     },
     {
       icon: <Phone className="w-5 h-5 text-blue-600" />,
       title: "Phone",
-      details: "+1 (123) 456-7890",
-      link: "tel:+11234567890",
+      details: "07704413988",
+      link: "tel:07704413988",
     },
     {
       icon: <MapPin className="w-5 h-5 text-blue-600" />,
       title: "Location",
-      details: "Your City, Country",
+      details: "Bath and North East Somerset",
       link: "#",
     },
   ];

@@ -42,41 +42,45 @@ const Education = () => {
     },
     {
       title: "BTEC speaking and listening",
-      institution: "gelos community",
+      institution: "gecko community",
       status: "Distinction",
       period: "2021 - 2022"
     },
     {
       title: "GCSE English language",
-      institution: "gelos community",
+      institution: "gecko community",
       status: "Distinction",
       period: "2021 - 2022"
     },
     {
       title: "GCSE Maths",
       status: "Grade 4",
-      period: ""
+      period: "2021 - 2022"
     }
   ];
 
   const certifications: CertificationItem[] = [
     {
-      title: "Microsoft Windows",
-      institution: "University of Bath",
-      year: "2023"
+      title: "Cyber security @ CIISec",
+      status: "In Progress (2024)",
+      year: "2024"
     },
     {
-      title: "Cyber safety at Cefac",
-      institution: "Sellafield",
-      year: "2023"
+      title: "Speaking & listening",
+      institution: "gecko community",
+      year: "2021 - 2022"
     },
     {
-      title: "CompTIA Network+ (Progress 2023)",
-      year: "2023"
+      title: "CompTIA A+ (Progress, 2025)",
+      year: "2025"
     },
     {
-      title: "CompTIA Security+ (Progress 2023)",
-      year: "2023"
+      title: "CompTIA Network+ (Progress, 2025)",
+      year: "2025"
+    },
+    {
+      title: "CompTIA Security+ (Progress, 2025)",
+      year: "2025"
     }
   ];
 
@@ -153,7 +157,7 @@ const Education = () => {
                 <h4 className="text-lg font-bold text-gray-900">Katy Maxwell</h4>
                 <p className="text-gray-600">Founder & Director</p>
                 <p className="text-gray-500 mt-2">
-                  Email: info@studiomix.co.uk
+                  Email: hello@studiomix.co.uk
                 </p>
               </div>
             </div>

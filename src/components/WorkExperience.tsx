@@ -33,10 +33,10 @@ const WorkExperience = () => {
       period: "2023 - 2023",
       description: [
         "Worked as a team of 7 on the helpdesk supporting approximately 8,000 staff members and 20,000 students and visitors",
-        "Supported 300 University-owned computers on Windows, along with countless personal devices",
-        "Handled support requests within defined service level agreements",
+        "Supported 300 University-owned computers on Windows 10, along with countless personal devices such as computers, phones, TVs, etc.",
+        "Handled support requests within defined service level agreements using TopDesk",
         "Worked closely with both 2nd line, 3rd line and the cyber team to escalate problems and identify solutions",
-        "Supported ticket-based helpdesk queries and problems including troubleshooting connections, system access, and general technical tasks"
+        "Supported help desk queries and problems including troubleshooting connections, finding errored routers and modems"
       ],
       technologies: ["Windows", "Help Desk Systems", "Technical Troubleshooting", "IT Support"],
     },
@@ -44,13 +44,13 @@ const WorkExperience = () => {
       title: "IT Technician",
       company: "Studio Mix LTD",
       location: "Somerset",
-      period: "2022 - 2023",
+      period: "2022 - 2022",
       description: [
         "Worked solo to install, deploy and troubleshoot technology",
-        "Supported projects for installing technology such as rear facing cameras, Raspberry Pi and Car Play in vehicles",
+        "Supported 1 project of installing technology such as a rear facing camera, Raspberry Pi and Car Play in a vehicle",
         "Resolved issues timely within defined service level agreements",
-        "Worked with external stakeholders and clients including directors",
-        "Supported help desk review of queries and problems including internet/video connectivity issues"
+        "Explained technical knowledge to non-technical people, such as the director",
+        "Supported low level networking queries and problems such as troubleshooting connections to and from the vehicle"
       ],
       technologies: ["Raspberry Pi", "Vehicle Technology", "Troubleshooting", "Service Level Agreements"],
     }

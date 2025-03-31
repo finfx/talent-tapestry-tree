@@ -37,7 +37,7 @@ const Skills = () => {
       title: "Cloud Technologies",
       description: "Experience with cloud platforms and services",
       icon: <HardDrive className="w-8 h-8 text-blue-600" />,
-      skills: ["AWS", "Azure", "Office 365", "Cloud Migration", "SaaS Solutions"]
+      skills: ["AWS", "Azure", "Office 365", "Cloud Migration"]
     },
   ];
 

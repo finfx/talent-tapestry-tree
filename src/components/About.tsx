@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 const About = () => {
   return <section id="about" className="py-20 bg-white">
@@ -13,10 +14,10 @@ const About = () => {
               My Profile
             </h3>
             <p className="text-gray-600 mb-4">
-              Detail-orientated IT professional with hands-on experience in PC/network diagnostic system installation and troubleshooting. Experienced in building, maintaining, and repairing servers, PCs, laptops, and workstations, ensuring optimal IT performance and security compliance.
+              Detail-oriented IT professional with hands-on experience in hardware deployment, system installations, and troubleshooting within enterprise environments. Skilled in configuring and upgrading PCs, laptops, and workstations, ensuring optimal IT performance and security compliance.
             </p>
             <p className="text-gray-600 mb-6">
-              Adept at collaborating across teams and providing excellent customer support. Known for a methodical approach to problem solving, strong clear-facing communication, and ability to manage IT related projects efficiently. Passionate about providing high-quality IT solutions and fostering positive relationships.
+              Adept at diagnosing technical issues, resolving software and hardware challenges, and delivering excellent customer support. Known for a methodical approach to problem solving, strong client-facing skills, and the ability to manage IT refresh projects efficiently. Passionate about providing high-quality IT solutions and fostering positive client relationships.
             </p>
             
             <div className="grid grid-cols-2 gap-4 mb-6">
@@ -30,7 +31,7 @@ const About = () => {
               </div>
               <div>
                 <h4 className="font-bold text-gray-800">Location:</h4>
-                <p className="text-gray-600">Bath and north east sommerset</p>
+                <p className="text-gray-600">Bath and North East Somerset</p>
               </div>
               <div>
                 <h4 className="font-bold text-gray-800">Availability:</h4>
