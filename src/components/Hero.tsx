@@ -40,7 +40,7 @@ const Hero = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur opacity-30"></div>
               <div className="relative bg-white rounded-full p-2">
                 <img
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=500&h=500"
+                  src="/lovable-uploads/2368a914-5afb-4a05-a1a0-bc146eeef1e4.png"
                   alt="Finlay Fray profile"
                   className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover"
                 />

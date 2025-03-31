@@ -4,6 +4,7 @@ import { Briefcase, Calendar } from "lucide-react";
 type Experience = {
   title: string;
   company: string;
+  companyUrl: string;
   location: string;
   period: string;
   description: string[];
@@ -15,6 +16,7 @@ const WorkExperience = () => {
     {
       title: "Bar Staff",
       company: "Labyrinth Bar & Nightclub",
+      companyUrl: "https://www.labyrinthbath.com/",
       location: "Bath",
       period: "2024 - 2024",
       description: [
@@ -29,6 +31,7 @@ const WorkExperience = () => {
     {
       title: "IT service desk analyst",
       company: "University of Bath",
+      companyUrl: "https://www.bath.ac.uk/professional-services/digital-data-and-technology/",
       location: "Bath",
       period: "2023 - 2023",
       description: [
@@ -43,6 +46,7 @@ const WorkExperience = () => {
     {
       title: "IT Technician",
       company: "Studio Mix LTD",
+      companyUrl: "https://studiomix.co.uk/",
       location: "Somerset",
       period: "2022 - 2022",
       description: [
@@ -86,7 +90,9 @@ const WorkExperience = () => {
                     </div>
                   </div>
                   <div className="text-blue-600 font-medium">
-                    {exp.company} • {exp.location}
+                    <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      {exp.company}
+                    </a> • {exp.location}
                   </div>
                   <ul className="mt-4 space-y-2">
                     {exp.description.map((item, idx) => (
