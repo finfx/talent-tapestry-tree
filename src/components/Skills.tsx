@@ -1,11 +1,10 @@
 
 import { Award, Code, Database, Globe, Server, Shield, Wrench, HardDrive, Network, Users } from "lucide-react";
-import { 
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 
 type SkillItem = {
   name: string;
@@ -164,10 +163,6 @@ const Skills = () => {
       icon: <HardDrive className="w-8 h-8 text-blue-600" />,
       skills: [
         {
-          name: "AWS", 
-          description: "Working knowledge of Amazon Web Services infrastructure, services, and best practices for cloud deployment."
-        },
-        {
           name: "Azure", 
           description: "Experience with Microsoft's cloud computing platform, including virtual machines, storage, and identity services."
         },
@@ -209,34 +204,30 @@ const Skills = () => {
               <p className="text-gray-600 mb-4">{category.description}</p>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIndex) => (
-                  <TooltipProvider key={skillIndex}>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <span
-                          className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full cursor-help"
-                        >
-                          {skill.name}
-                        </span>
-                      </TooltipTrigger>
-                      <TooltipContent side="top" className="max-w-xs">
-                        {skill.link ? (
-                          <div>
-                            <p>{skill.description}</p>
-                            <a 
-                              href={skill.link} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              className="text-blue-500 hover:underline block mt-1 text-xs"
-                            >
-                              Learn more
-                            </a>
-                          </div>
-                        ) : (
-                          <p>{skill.description}</p>
-                        )}
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
+                  <HoverCard key={skillIndex}>
+                    <HoverCardTrigger asChild>
+                      <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full cursor-help">
+                        {skill.name}
+                      </span>
+                    </HoverCardTrigger>
+                    <HoverCardContent className="w-80 p-4 animate-in fade-in-0 zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=top]:slide-in-from-bottom-2">
+                      {skill.link ? (
+                        <div>
+                          <p className="text-sm text-gray-700">{skill.description}</p>
+                          <a 
+                            href={skill.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-blue-500 hover:underline block mt-1 text-xs"
+                          >
+                            Learn more
+                          </a>
+                        </div>
+                      ) : (
+                        <p className="text-sm text-gray-700">{skill.description}</p>
+                      )}
+                    </HoverCardContent>
+                  </HoverCard>
                 ))}
               </div>
             </div>
