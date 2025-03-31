@@ -18,7 +18,7 @@ const Hero = () => {
               Hi, I'm <span className="text-blue-600">Finlay Fray</span>
               <br />
               <span className="text-3xl md:text-4xl lg:text-5xl">
-                IT Professional
+                in IT support, administration and troubleshooting
               </span>
             </h1>
             <p className="text-lg text-gray-600 max-w-md">
