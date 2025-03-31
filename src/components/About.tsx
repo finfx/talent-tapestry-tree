@@ -1,9 +1,6 @@
-
 import { Button } from "@/components/ui/button";
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 bg-white">
+  return <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900">About Me</h2>
@@ -33,7 +30,7 @@ const About = () => {
               </div>
               <div>
                 <h4 className="font-bold text-gray-800">Location:</h4>
-                <p className="text-gray-600">Bay road Flat 5, Somerset</p>
+                <p className="text-gray-600">Bath and north east sommerset</p>
               </div>
               <div>
                 <h4 className="font-bold text-gray-800">Availability:</h4>
@@ -52,18 +49,12 @@ const About = () => {
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg blur opacity-30"></div>
               <div className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=600"
-                  alt="IT Professional working on computer"
-                  className="rounded-lg shadow-lg w-full"
-                />
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=600" alt="IT Professional working on computer" className="rounded-lg shadow-lg w-full" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
