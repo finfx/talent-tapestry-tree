@@ -18,37 +18,43 @@ const Education = () => {
   const educationItems: EducationItem[] = [
     {
       title: "CompTIA Security+",
-      status: "Independent • In Progress (2025)",
+      institution: "Independent",
+      status: "In Progress (2025)",
       period: "2025 - PRESENT"
     },
     {
       title: "CompTIA Network+",
-      status: "Independent • In Progress (2025)",
+      institution: "Independent",
+      status: "In Progress (2025)",
       period: "2025 - PRESENT"
     },
     {
       title: "CompTIA A+",
-      status: "Independent • In Progress (2025)",
+      institution: "Independent",
+      status: "In Progress (2025)",
       period: "2025 - PRESENT"
     },
     {
-      title: "Cyber/ISPO",
-      status: "Independent • In Progress (2024)",
+      title: "CyberEPQ",
+      institution: "CIISec",
+      status: "In Progress (2024)",
       period: "2024 - PRESENT"
     },
     {
-      title: "IETSC speaking and listening",
-      status: "gelos community",
+      title: "BTEC speaking and listening",
+      institution: "gelos community",
+      status: "Distinction",
       period: "2021 - 2022"
     },
     {
-      title: "Distinction",
-      status: "GCSE English language community",
+      title: "GCSE English language",
+      institution: "gelos community",
+      status: "Distinction",
       period: "2021 - 2022"
     },
     {
-      title: "Grade 4",
-      status: "GCSE Maths",
+      title: "GCSE Maths",
+      status: "Grade 4",
       period: ""
     }
   ];
@@ -98,6 +104,7 @@ const Education = () => {
                 <div key={index} className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
                   <div className="flex flex-col gap-2">
                     <h4 className="text-lg font-bold text-gray-900">{item.title}</h4>
+                    {item.institution && <p className="text-gray-600">{item.institution}</p>}
                     <p className="text-gray-600">{item.status}</p>
                     {item.period && (
                       <div className="flex items-center text-gray-500 text-sm mt-1">
