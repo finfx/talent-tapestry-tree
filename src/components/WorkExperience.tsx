@@ -1,5 +1,5 @@
 
-import { Briefcase, Calendar } from "lucide-react";
+import { Briefcase, Calendar, Mail, User } from "lucide-react";
 
 type Experience = {
   title: string;
@@ -9,6 +9,11 @@ type Experience = {
   period: string;
   description: string[];
   technologies?: string[];
+  reference?: {
+    name: string;
+    position: string;
+    email: string;
+  };
 };
 
 const WorkExperience = () => {
@@ -27,6 +32,11 @@ const WorkExperience = () => {
         "Ensured compliance with security protocols, safeguarding customer data and handling sensitive transactions"
       ],
       technologies: ["POS Systems", "Customer Service", "Problem Solving", "Security Protocols"],
+      reference: {
+        name: "John Mason",
+        position: "Site Director",
+        email: "John@labyrinthbath.com"
+      }
     },
     {
       title: "IT service desk analyst",
@@ -57,6 +67,11 @@ const WorkExperience = () => {
         "Supported low level networking queries and problems such as troubleshooting connections to and from the vehicle"
       ],
       technologies: ["Raspberry Pi", "Vehicle Technology", "Troubleshooting", "Service Level Agreements"],
+      reference: {
+        name: "Katy Maxwell",
+        position: "Founder and Director",
+        email: "Hello@studiomix.co.uk"
+      }
     }
   ];
 
@@ -113,6 +128,24 @@ const WorkExperience = () => {
                       ))}
                     </div>
                   )}
+                  
+                  {exp.reference && (
+                    <div className="mt-5 pt-4 border-t border-gray-200">
+                      <div className="flex flex-col space-y-1">
+                        <h4 className="text-gray-900 font-medium">Reference:</h4>
+                        <div className="flex items-center gap-2 text-gray-700">
+                          <User className="h-4 w-4 text-blue-600" />
+                          <span>{exp.reference.name}, {exp.reference.position}</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-gray-700">
+                          <Mail className="h-4 w-4 text-blue-600" />
+                          <a href={`mailto:${exp.reference.email}`} className="text-blue-600 hover:underline">
+                            {exp.reference.email}
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -124,3 +157,4 @@ const WorkExperience = () => {
 };
 
 export default WorkExperience;
+
