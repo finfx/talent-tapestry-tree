@@ -4,7 +4,7 @@ import { GraduationCap, Award, Calendar } from "lucide-react";
 type EducationItem = {
   institution: string;
   degree: string;
-  field: string;
+  field?: string;
   period: string;
   description?: string;
 };
@@ -20,18 +20,40 @@ type CertificationItem = {
 const Education = () => {
   const educationList: EducationItem[] = [
     {
-      institution: "Bridgwater & Taunton College",
-      degree: "Level 3 BTEC Extended Diploma",
-      field: "IT",
-      period: "2020 - 2022",
-      description: "Achieved D*D*D* (Triple Distinction Star) - the highest possible grade, equating to 168 UCAS points. Studied a range of IT subjects including networking, programming, computer systems, and cybersecurity."
+      institution: "Independent",
+      degree: "CompTIA Security+",
+      period: "2025 - PRESENT",
+      description: "In Progress (2025)"
     },
     {
-      institution: "Bridgwater & Taunton College",
-      degree: "GCSE Equivalents",
-      field: "English & Mathematics",
-      period: "2020 - 2021",
-      description: "Successfully completed GCSE equivalent qualifications in English and Mathematics."
+      institution: "Independent",
+      degree: "CompTIA Network+",
+      period: "2025 - PRESENT",
+      description: "In Progress (2025)"
+    },
+    {
+      institution: "Independent",
+      degree: "CompTIA A+",
+      period: "2025 - PRESENT",
+      description: "In Progress (2025)"
+    },
+    {
+      institution: "CiiSec",
+      degree: "CyberEPQ",
+      period: "2024 - PRESENT",
+      description: "In Progress (2024)"
+    },
+    {
+      institution: "gecko community",
+      degree: "BTEC speaking and listening",
+      period: "2021 - 2022",
+      description: "Distinction"
+    },
+    {
+      institution: "gecko community",
+      degree: "GCSE English language",
+      period: "2021 - 2022",
+      description: "Grade 4"
     }
   ];
 
@@ -71,14 +93,14 @@ const Education = () => {
               {educationList.map((edu, index) => (
                 <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
                   <div className="flex justify-between items-start">
-                    <h4 className="text-lg font-bold text-gray-900">{edu.institution}</h4>
+                    <h4 className="text-lg font-bold text-gray-900">{edu.degree}</h4>
                     <div className="flex items-center text-gray-500 text-sm">
                       <Calendar className="h-4 w-4 mr-1" />
                       {edu.period}
                     </div>
                   </div>
                   <p className="text-blue-600 font-medium">
-                    {edu.degree} in {edu.field}
+                    {edu.institution}
                   </p>
                   {edu.description && (
                     <p className="mt-2 text-gray-700">{edu.description}</p>
