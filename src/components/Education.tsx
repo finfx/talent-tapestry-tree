@@ -1,5 +1,5 @@
 
-import { GraduationCap, Award, Calendar } from "lucide-react";
+import { GraduationCap, Calendar } from "lucide-react";
 
 type EducationItem = {
   institution: string;
@@ -7,14 +7,6 @@ type EducationItem = {
   field?: string;
   period: string;
   description?: string;
-};
-
-type CertificationItem = {
-  name: string;
-  issuer: string;
-  date: string;
-  description?: string;
-  credentialId?: string;
 };
 
 const Education = () => {
@@ -57,78 +49,39 @@ const Education = () => {
     }
   ];
 
-  const certifications: CertificationItem[] = [
-    {
-      name: "Google IT Support Professional Certificate",
-      issuer: "Google",
-      date: "January 2023",
-      description: "Comprehensive program covering troubleshooting, customer service, networking, operating systems, system administration, and security."
-    },
-    {
-      name: "Google Cybersecurity Professional Certificate",
-      issuer: "Google",
-      date: "May 2023",
-      description: "In-depth training on security domains, security frameworks, and security controls. Learned about tools and programming languages, including Linux, SQL, and Python."
-    }
-  ];
-
   return (
     <section id="education" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900">Education & Certifications</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Education</h2>
           <div className="mt-2 h-1 w-20 bg-blue-600 mx-auto"></div>
           <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-            My educational background and professional certifications.
+            My educational background and professional development
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div>
             <div className="flex items-center mb-6">
               <GraduationCap className="h-6 w-6 text-blue-600 mr-2" />
-              <h3 className="text-2xl font-bold text-gray-800">Education</h3>
+              <h3 className="text-2xl font-bold text-gray-800">Education & Certifications</h3>
             </div>
-            <div className="space-y-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {educationList.map((edu, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                  <div className="flex justify-between items-start">
+                <div key={index} className="bg-white rounded-lg p-6 shadow-sm h-full flex flex-col justify-between">
+                  <div>
                     <h4 className="text-lg font-bold text-gray-900">{edu.degree}</h4>
-                    <div className="flex items-center text-gray-500 text-sm">
-                      <Calendar className="h-4 w-4 mr-1" />
-                      {edu.period}
-                    </div>
+                    <p className="text-blue-600 font-medium mt-1">
+                      {edu.institution}
+                    </p>
+                    {edu.description && (
+                      <p className="mt-2 text-gray-700">{edu.description}</p>
+                    )}
                   </div>
-                  <p className="text-blue-600 font-medium">
-                    {edu.institution}
-                  </p>
-                  {edu.description && (
-                    <p className="mt-2 text-gray-700">{edu.description}</p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center mb-6">
-              <Award className="h-6 w-6 text-blue-600 mr-2" />
-              <h3 className="text-2xl font-bold text-gray-800">Certifications</h3>
-            </div>
-            <div className="space-y-6">
-              {certifications.map((cert, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                  <h4 className="text-lg font-bold text-gray-900">{cert.name}</h4>
-                  <div className="flex justify-between items-center mt-1">
-                    <p className="text-blue-600">{cert.issuer}</p>
-                    <span className="text-gray-500 text-sm">{cert.date}</span>
+                  <div className="flex items-center text-gray-500 text-sm mt-4">
+                    <Calendar className="h-4 w-4 mr-1" />
+                    {edu.period}
                   </div>
-                  {cert.description && (
-                    <p className="mt-2 text-gray-700 text-sm">{cert.description}</p>
-                  )}
-                  {cert.credentialId && (
-                    <p className="mt-1 text-gray-500 text-xs">Credential ID: {cert.credentialId}</p>
-                  )}
                 </div>
               ))}
             </div>
